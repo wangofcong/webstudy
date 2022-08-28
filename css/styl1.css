@@ -1,0 +1,11 @@
+.font1{font-family: 'Times New Roman', Times, serif;font-size: xx-large;font-weight: 900;font-style: oblique;color: red;text-align: end;}
+/* .red{font-size: 56px;color: cadetblue;} */
+#font2{text-align: left;line-height: 100%;text-decoration: overline;text-indent: 2px;background-color: antiquewhite;}
+#love{border: 10px aqua solid;padding: 2px;opacity: 0.5;}
+body{background-image: url(/source/img/love1.jpg);background-repeat: repeat-x;background-size: 30%;}
+/* .alice{border-collapse: collapse;} */
+.table1{border-collapse: collapse;empty-cells: show;border: 1px aquamarine solid;}
+tr{border: 2px black solid;}
+td{border: 2px red solid;text-align: center}
+form{border: 2px red solid;padding: 3px;margin: 12px;}
+ul{color: aqua;border: 2px chartreuse solid;list-style: upper-alpha;}
