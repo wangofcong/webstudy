@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>studyjs4</title>
+    <style>
+        #bt1{text-align: center ;color: aqua}
+    </style>
+</head>
+<body>
+<button id="bt1">click me</button>
+<script>
+    document.writeln('<pre>')
+    let bt1 = document.querySelector('#bt1')
+    bt1.addEventListener('mousedown',()=>{
+        window.open('source/video/1.mp3')
+    })
+    bt1.addEventListener('dblclick',()=>alert('you click two times'))
+    document.writeln('</pre>')
+</script>
+<br>
+<div class="div1" style="background-color: aquamarine;text-align:center;width: 1000px;height: 50px" >hell,world</div>
+<script>
+    let div1 = document.querySelector('.div1')
+    let lastx
+    div1.addEventListener('mousedown',evt => {
+        if(evt.button===0){
+            lastx = evt.clientX
+            window.addEventListener('mousemove',moved)
+            evt.preventDefault()
+        }
+    })
+    let moved = function (evt){
+        if(evt.buttons===0){
+            window.removeEventListener('mousemove',moved)
+        }else {
+            let dist = evt.clientX-lastx
+            let newwidth = Math.max(10,div1.offsetWidth + dist)
+            div1.style.width = newwidth + 'px'
+            div1.style.height = newwidth + 'px'
+            lastx=evt.clientX
+        }
+    }
+</script>
+</body>
+</html>
