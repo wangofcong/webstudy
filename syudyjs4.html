@@ -42,5 +42,21 @@
         }
     }
 </script>
+    <br>
+<p id="p1" style="color: red">hell</p>
+<script>
+    let p1 = document.querySelector('#p1')
+    console.log(p1.textContent)
+    setTimeout(()=>p1.textContent = 'you change me ',5000)
+    console.log(p1.childNodes[0].nodeValue)
+    console.log(window.location.pathname)
+    console.log(window.location.hostname)
+    // setTimeout(()=>window.location.assign('studyjs.html'),5000)
+    let quit=window.confirm('are you sure quit?')
+    if(quit)
+        window.close()
+    prompt('are you sure you don~t quit')
+    console.log(document.cookie)
+</script>
 </body>
 </html>
